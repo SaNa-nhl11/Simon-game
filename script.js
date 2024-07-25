@@ -67,8 +67,9 @@ $(".btn").click(clicking);
 function clicking() {
     var userChosenColour= $(this).attr("id");  
     userClickedPattern.push(userChosenColour);
-
+if(gamepattern.length!==0){
     checkAnswer(userClickedPattern.length-1);
+}
 }
 
 
